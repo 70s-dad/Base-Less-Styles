@@ -1,5 +1,5 @@
 //
-// VARIABLES - W3 Canvas Base Styles
+// VARIABLES - custom variables for a Canvas template
 // --------------------------------------------------
 
 
@@ -8,9 +8,15 @@
 @white:                 #FFFFFF;
 @black:                 #000000;
 
-// GREENS
-@base-color-1:          #7AC143; // vitapet green - lime green
-@base-color-2:          #42B64D; // dark green
+//GREENS
+@base-colour-1:          #0D9ACC; // dark blue
+@base-colour-2:          #64C7F1; // light blue
+@base-colour-3:          #404040; // dark grey
+@base-colour-4:          #707070; // light grey
+@base-colour-5:          #49226B; // dark purple
+@base-colour-6:          #6E4E92; // light purple
+@base-colour-7:          lighten(@black, 25%); // #404040
+@base-colour-8:          lighten(@black, 44%); // #707070
 
 //GREYS
 @base-grey:             #272A2D;
@@ -30,11 +36,11 @@
 @text-color:            @grey-40;
 
 //LINK COLOURS
-@link-color:            @base-color-2;
+@link-color:            @base-colour-2;
 @link-hover-color:      darken(@link-color, 15%);
 
 //TEXT SELECTION COLOURS
-@selected-text-bg:        @base-color-1;
+@selected-text-bg:        @base-colour-1;
 @selected-text-color:     @white;
 
 
@@ -103,7 +109,7 @@
 @table-hr-font:                 @custom-font-1;
 @table-body-font:               @font-family-base;
 
-@table-bg-hr:                   @base-color-2;
+@table-bg-hr:                   @base-colour-2;
 
 @table-bg:                      transparent; // overall background-color
 @table-bg-odd:                  @grey-6;
@@ -120,7 +126,7 @@
 @btn-padding-vert:              8px;
 @btn-padding-horz:              10px;
 
-@btn-std-color:                 @base-color-2;
+@btn-std-color:                 @base-colour-2;
 @btn-std-text:                  @white;
 @btn-std-border:                darken(@btn-std-color, 5%);
 
@@ -188,7 +194,7 @@
 
 //NAVBAR BASICS
 @navbar-height:                         80px;
-@navbar-bg-color:                       @base-color-2;
+@navbar-bg-color:                       @base-colour-1;
 
 @navbar-item-padding-horz:              30px;
 @navbar-item-text-color:                @white;
@@ -270,7 +276,7 @@
 /************************************************ BREADCRUMBS */
 //@breadcrumb-bg:               #f5f5f5;
 //@breadcrumb-color:            #ccc;
-//@breadcrumb-active-color:     @base-color-2;
+//@breadcrumb-active-color:     @base-colour-2;
 //@breadcrumb-separator:        "/";
 
 

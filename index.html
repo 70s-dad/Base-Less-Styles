@@ -10,6 +10,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#A200FF">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/prism.css">
@@ -20,98 +37,239 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="base-styles-header">
+            <a href="#" class="header-logo"><img src="basestyle-images/header-logo.png" /></a>
+        </div>
+
+        <div class="sidebar-navigation">
+            <ul class="style-guide-nav">
+                <li class="menu-item">
+                    <a href="#">Navigation</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#global-styles">Global Styles</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Objects</a>
+                </li>
+                <li id="menu-item-03" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-03 parent">
+                    <a href="#">Components</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-3535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
+                            <a href="#">Features</a>
+                        </li>
+                        <li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
+                            <a href="#">Testimonials</a>
+                        </li>
+                        <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
+                            <a href="#">Archives</a>
+                        </li>
+                        <li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                            <a href="#">Sitemap</a>
+                        </li>
+                        <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304">
+                            <a href="#">Contact Form</a>
+                        </li>
+                        <li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799">
+                            <a href="#">Timeline</a>
+                        </li>
+                        <li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-303">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4106">
+                            <a href="#">Business</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-04" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-04">
+                    <a href="#">Animations</a>
+                </li>
+            </ul> <!-- /.style-guide-nav -->
+        </div> <!-- /.sidebar-navigation -->
+
         <div class="content-wrap">
-            <!-- sample navigation start - based on woothemes canvas example -->
-            <nav class="navigation" role="navigation">
-                <section class="menus">
-                    <a href="#" class="nav-home"><span>Home</span></a>
-                    <ul id="main-nav" class="nav fl">
-                        <li id="menu-item-01" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-01">
-                            <a href="#">Global Styles</a>
-                        </li>
-                        <li id="menu-item-02" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-02">
-                            <a href="#">Objects</a>
-                        </li>
-                        <li id="menu-item-03" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-03 parent">
-                            <a href="#">Components</a>
-                            <ul class="sub-menu">
-                                <li id="menu-item-3535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
-                                    <a href="#">Features</a>
-                                </li>
-                                <li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
-                                    <a href="#">Testimonials</a>
-                                </li>
-                                <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
-                                    <a href="#">Archives</a>
-                                </li>
-                                <li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
-                                    <a href="#">Sitemap</a>
-                                </li>
-                                <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304">
-                                    <a href="#">Contact Form</a>
-                                </li>
-                                <li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799">
-                                    <a href="#">Timeline</a>
-                                </li>
-                                <li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-303">
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4106">
-                                    <a href="#">Business</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="menu-item-04" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-04">
-                            <a href="#">Animations</a>
-                        </li>
-                    </ul> <!-- /#main-nav -->
-                </section> <!-- /.menus -->
-            </nav> <!-- /#navigation -->
-            <!-- / sample navigation -->
 
             <div class="style-guide-content post-content">
-                <h1>Style Guide</h1>
 
-                <div class="style-guide-title">
-                    <h3>Global Styles</h3>
-                    <p>Globally defined styles such as colours & typography. These styles effect objects & components site-wide.</p>
-                </div>
+                <div class="style-guide-section">
 
-                <div class="component-block">
-                    <div class="component-title">
-                        <h4>Fonts</h4>
-                    </div><!-- /.component-title -->
-                    <div class="component-preview">
-                        <p class="primary-font">Primary Font: “VAG Rounded Std”, Helvetica, Arial, sans-serif;</p>
-                        <p>Secondary Font: Helvetica, Arial, sans-serif;</p>
-                        <p><em>Secondary Font Italic: Helvetica, Arial, sans-serif;</em></p>
-                        <p><strong>Secondary Font Bold: Helvetica, Arial, sans-serif;</strong></p>
+                    <div class="style-guide-title">
+                        <h2>Navigation</h2>
+                        <p>Main navigation generated by Canvas. Hover over for dropdowns.</p>
                     </div>
-                    <div class="component-code">
-                        <pre class="  language-markup"><code class="  language-markup">&lt;p class=&quot;primary-font&quot;&gt;Primary Font: &quot;VAG Rounded Std&quot;, Helvetica, Arial, sans-serif;&lt;/p&gt;
+
+                    <div class="component-block">
+                        <!-- sample navigation start - based on woothemes canvas example -->
+                        <nav class="navigation" role="navigation">
+                            <section class="menus">
+                                <a href="#" class="nav-home"><span>Home</span></a>
+                                <ul id="main-nav" class="nav fl">
+                                    <li id="menu-item-01" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-01">
+                                        <a href="#">Navigation 01</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-3000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
+                                                <a href="#">Sub Nav 01</a>
+                                            </li>
+                                            <li id="menu-item-3001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
+                                                <a href="#">Sub Nav 02</a>
+                                            </li>
+                                            <li id="menu-item-3002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
+                                                <a href="#">Sub Nav 03</a>
+                                            </li>
+                                            <li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                                                <a href="#">Sub Nav 04</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-02" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-02">
+                                        <a href="#">Navigation 02</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-3004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
+                                                <a href="#">Sub Nav 01</a>
+                                            </li>
+                                            <li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
+                                                <a href="#">Sub Nav 02</a>
+                                            </li>
+                                            <li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
+                                                <a href="#">Sub Nav 03</a>
+                                            </li>
+                                            <li id="menu-item-3007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                                                <a href="#">Sub Nav 04</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-03" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-03 parent">
+                                        <a href="#">Navigation 03</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-3535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
+                                                <a href="#">Sub Nav 01</a>
+                                            </li>
+                                            <li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
+                                                <a href="#">Sub Nav 02</a>
+                                            </li>
+                                            <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
+                                                <a href="#">Sub Nav 03</a>
+                                            </li>
+                                            <li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                                                <a href="#">Sub Nav 04</a>
+                                            </li>
+                                            <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304">
+                                                <a href="#">Sub Nav 05</a>
+                                            </li>
+                                            <li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799">
+                                                <a href="#">Sub Nav 06</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-04" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-04">
+                                        <a href="#">Navigation 04</a>
+                                    </li>
+                                </ul> <!-- /#main-nav -->
+                            </section> <!-- /.menus -->
+                        </nav> <!-- /#navigation -->
+                        <!-- / sample navigation -->
+                    </div><!-- /.component-block -->
+
+                </div> <!-- /.style-guide-section - navigation -->
+
+                <div class="style-guide-section">
+
+                    <div class="style-guide-title">
+                        <h2 id="global-styles" class="page-link">Global Styles</h2>
+                        <p>Globally defined styles such as colours & typography. These styles effect objects & components site-wide.</p>
+                    </div>
+
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3>Colours</h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            <div class="colour-tile colour-1"></div>
+                            <div class="colour-tile colour-2"></div>
+                            <div class="colour-tile colour-3"></div>
+                            <div class="colour-tile colour-4"></div>
+                            <div class="colour-tile colour-5"></div>
+                            <div class="colour-tile colour-6"></div>
+                            <div class="colour-tile colour-7"></div>
+                            <div class="colour-tile colour-8"></div>
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup">@base-colour-1: #0D9ACC;
+@base-colour-2: #64C7F1;
+@base-colour-3: #404040;
+@base-colour-4: #707070;
+@base-colour-5: #49226B;
+@base-colour-6: #6E4E92;
+@base-colour-7: lighten(@black, 25%);
+@base-colour-8: lighten(@black, 44%);</code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3>Fonts</h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            <p class="primary-font">Primary Font: “VAG Rounded Std”, Helvetica, Arial, sans-serif;</p>
+                            <p>Secondary Font: Helvetica, Arial, sans-serif;</p>
+                            <p><em>Secondary Font Italic: Helvetica, Arial, sans-serif;</em></p>
+                            <p><strong>Secondary Font Bold: Helvetica, Arial, sans-serif;</strong></p>
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup">&lt;p class=&quot;primary-font&quot;&gt;Primary Font: &quot;VAG Rounded Std&quot;, Helvetica, Arial, sans-serif;&lt;/p&gt;
 &lt;p&gt;Secondary Font: Helvetica, Arial, sans-serif;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Secondary Font Italic: Helvetica, Arial, sans-serif;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Secondary Font Bold: Helvetica, Arial, sans-serif;&lt;/strong&gt;&lt;/p&gt;</code></pre>
-                    </div><!-- /.component-code -->
-                </div><!-- /.component-block -->
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
 
-                <h1>Heading 1</h1>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3>Headings</h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            <h1>Heading 1</h1>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <h2>Heading 2</h2>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h2>Heading 2</h2>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <h3>Heading 3</h3>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h3>Heading 3</h3>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <h4>Heading 4</h4>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h4>Heading 4</h4>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <h5>Heading 5</h5>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h5>Heading 5</h5>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <h6>Heading 6</h6>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h6>Heading 6</h6>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+&lt;p&gt;Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;</code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
+                </div> <!-- /.style-guide-section - global styles -->
+
+                
 
                 <h3>Paragraph</h3>
                 <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>

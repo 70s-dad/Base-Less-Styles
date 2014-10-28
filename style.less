@@ -1,13 +1,16 @@
 /*!
-Theme Name: W3 Canvas Base Styles
+Theme Name: Canvas Base Styles Template
 Theme URI: http://www.workingthree.com
 Description: This is a child theme.
 Author: Working Three
 Author URI: http://www.workingthree.com
 Template: Canvas by WooThemes
 */
+
+// This file is a starting point for a build with the Canvas template
+
 /************************************************ GENERAL IMPORTS */
-@import "less/base-styleguide-styles.less"; //For styleguide development - delete before launch
+@import "less/base-styleguide-styles.less"; // For styleguide development - contains framework structure styles - delete before launch
 @import "less/lesshat.less";
 @import "less/normalize.less";
 @import "less/custom-variables.less";
@@ -90,9 +93,9 @@ Template: Canvas by WooThemes
 }
 .btn-std {
     color: @btn-std-text;
-    .background-image(linear-gradient(to bottom, @base-color-1 0%, @base-color-2 100%));
+    .background-image(linear-gradient(to bottom, @base-colour-1 0%, @base-colour-2 100%));
     &:hover {
-        .background-image(linear-gradient(to bottom, @base-color-2 0%, @base-color-1 100%));
+        .background-image(linear-gradient(to bottom, @base-colour-2 0%, @base-colour-1 100%));
         background-color: @btn-std-color;
         color: @btn-std-text;
     }
@@ -158,7 +161,7 @@ Template: Canvas by WooThemes
         height: 1px;
         bottom: 0;
         left: 0;
-        background: @base-color-2;
+        background: @base-colour-2;
     }
 }
 .text-link-grey {
@@ -219,23 +222,23 @@ h1, h2, h3, h3, h4, h5, h6 {
 h1 {
     font-size: @font-size-h1;
     line-height: @line-height-h1;
-    color: @base-color-2;
+    color: @base-colour-2;
     margin-top: 30px;
 }
 h2 {
     font-size: @font-size-h2;
     line-height: @line-height-h2;
-    color: @grey-60;
+    color: @black;
 }
 h3 {
     font-size: @font-size-h3;
     line-height: @line-height-h3;
-    color: @base-color-2;
+    color: @base-colour-2;
 }
 h4 {
     font-size: @font-size-h4;
     line-height: @line-height-h4;
-    color: @base-color-2;
+    color: @base-colour-2;
 }
 h5 {
     font-size: @font-size-h5;
@@ -287,7 +290,7 @@ blockquote {
         top: 0;
         left: 0;
 
-        background-color: @base-color-2;
+        background-color: @base-colour-2;
     }
 }
 hr {
@@ -314,7 +317,7 @@ ul, ol {
             margin-bottom: 10px;
             &:before {
                 content: "• ";
-                color: @base-color-2;
+                color: @base-colour-2;
                 margin-right: 3px;
             }
             a {
@@ -338,7 +341,7 @@ ul, ol {
                     text-indent: -15px;
                     &:before {
                         content: "• ";
-                        color: @base-color-2;
+                        color: @base-colour-2;
                         margin-right: 3px;
                     }
                     a {
@@ -361,7 +364,7 @@ dl {
     margin: 10px 0;
 }
 dt {
-    color: @base-color-2;
+    color: @base-colour-2;
     font-weight: bold;
 }
 dd {
@@ -395,7 +398,7 @@ dd {
     width: 100%;
     &:extend(h4 all);
     a {
-        color: @base-color-2;
+        color: @base-colour-2;
         &:hover {
             color: @white;
         }
@@ -527,7 +530,7 @@ dd {
     }
     .date {
         font-family: @custom-font-1;
-        color: @base-color-2;
+        color: @base-colour-2;
         font-size: @font-size-small;
     }
 }

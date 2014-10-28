@@ -1,4 +1,13 @@
 Base-Less-Styles
 ================
 
-Starting point for a less style guide that will work with a Wordpress theme
+A framework to act as a starting point for Woothemes' Canvas template.
+
+
+To Do
+================
+
+• Add style guide wrap & navigation - header & sidebar
+• Add navigation example inside wrap
+• Add Canvas' responsive navigation
+• Add user manual
