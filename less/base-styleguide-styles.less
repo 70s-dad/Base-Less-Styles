@@ -1,0 +1,83 @@
+//
+// BASE STYLEGUIDE STYLES - W3 Canvas Base Styles
+// --------------------------------------------------
+
+//MIXINS
+.style-tile {
+	background-color: @white;
+	.border-radius(@border-radius);
+	padding: 16px 16px 2px;
+}
+
+.content-wrap {
+    position: relative;
+    width: 100%;
+    background-color: @grey-6;
+}
+
+//HEADER
+.menus {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+//BODY
+.style-guide-content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+.style-guide-title {
+	&:extend(.style-tile all);
+	margin-top: 30px;
+	margin-bottom: 26px;
+	h3 {
+		margin-top: 0;
+	}
+	p {
+		margin-bottom: 18px;
+	}
+}
+
+//COMPONENTS
+.component-block {
+	width: 100%;
+	position: relative;
+	float: left;
+	.display(flex);
+	-webkit-flex-flow: row wrap;
+}
+.component-title {
+	width: 100%;
+	padding: 0 0 4px 8px;
+	.flex(1, 100%);
+	h4 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.component-preview {
+	&:extend(.style-tile all);
+	width: 60%;
+	float: left;
+	margin-right: 1%;
+	.flex(2, 60%);
+}
+.component-code {
+	&:extend(.style-tile all);
+	width: 39%;
+	float: left;
+	.flex(2, 39%);
+}
+pre {
+	max-height: 200px;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin: 0 !important;
+}
+code {
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+

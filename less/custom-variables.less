@@ -1,0 +1,276 @@
+//
+// VARIABLES - W3 Canvas Base Styles
+// --------------------------------------------------
+
+
+/************************************************ COLOURS */
+//BASE
+@white:                 #FFFFFF;
+@black:                 #000000;
+
+// GREENS
+@base-color-1:          #7AC143; // vitapet green - lime green
+@base-color-2:          #42B64D; // dark green
+
+//GREYS
+@base-grey:             #272A2D;
+@grey-60:               #666668; // #272A2D @ 60%
+@grey-40:               #8F8D8F; // #272A2D @ 40%
+@grey-20:               #ACABB0; // #272A2D @ 20%
+@grey-15:               #CCCACB; // #272A2D @ 15%
+@grey-10:               #DAD9D9; // #272A2D @ 10%
+@grey-6:                #E6E5E5; // #272A2D @ 6%
+@grey-3:                #F0EFEF; // #272A2D @ 3%
+
+//MISC
+@warning-color:         #D0043C; // masterpet red
+
+//TEXT COLOURS
+@body-bg:               @white;
+@text-color:            @grey-40;
+
+//LINK COLOURS
+@link-color:            @base-color-2;
+@link-hover-color:      darken(@link-color, 15%);
+
+//TEXT SELECTION COLOURS
+@selected-text-bg:        @base-color-1;
+@selected-text-color:     @white;
+
+
+/************************************************ TYPOGRAPHY */
+//BASE
+@font-family-sans-serif:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:         Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:     Monaco, Menlo, Consolas, "Courier New", monospace;
+
+//@FONTFACE DECLARATIONS
+@custom-font-1:             "VAGRoundedStdLight", Helvetica, Arial, sans-serif;
+@font-family-base:          @font-family-sans-serif;
+
+@font-face {
+    font-family: 'VAGRoundedStdLight';
+    src: url('fonts/vagroundedstd-light.eot');
+    src: url('fonts/vagroundedstd-light.eot') format('embedded-opentype'),
+         url('fonts/vagroundedstd-light.svg#VAGRoundedStdLight') format('svg'),
+         url('fonts/vagroundedstd-light.woff2') format('woff2'),
+         url('fonts/vagroundedstd-light.woff') format('woff'),
+         url('fonts/vagroundedstd-light.ttf') format('truetype');
+}
+
+//SVG hack for chrome <37 on windows
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: ‘VAGRoundedStdLight’;
+        src: url('fonts/vagroundedstd-light.svg#VAGRoundedStdLight') format('svg');
+    }
+}
+
+//FONT SIZES
+@font-size-base:          14px;
+@font-size-large:         1.29em; // ~18px
+@font-size-small:         0.85em; // ~12px
+
+@font-size-h1:            4.3em;  // ~60px
+@font-size-h2:            3em;    // ~42px
+@font-size-h3:            2.15em; // ~30px
+@font-size-h4:            1.5em;  // ~21px
+@font-size-h5:            1.43em; // ~20px
+@font-size-h6:            1.15em; // ~16px
+
+//LINE HEIGHTS
+@line-height-base:        1.4;    // 16.8/14
+
+@line-height-h1:          1.25;   // 75/60
+@line-height-h2:          1.3;    // 55/42
+@line-height-h3:          1.4;    // 42/30
+@line-height-h4:          1.6;    // 34/21
+@line-height-h5:          1.6;    // 30/20
+@line-height-h6:          1.6;    // 27/16
+
+
+/************************************************ SCAFFOLDING */
+
+@border-radius:           4px;
+@hr-color:                @grey-10;
+
+
+/************************************************ TABLES */
+
+@table-cell-padding-vert:       8px;
+@table-cell-padding-horz:       20px;
+
+@table-hr-font:                 @custom-font-1;
+@table-body-font:               @font-family-base;
+
+@table-bg-hr:                   @base-color-2;
+
+@table-bg:                      transparent; // overall background-color
+@table-bg-odd:                  @grey-6;
+@table-bg-even:                 @grey-10;
+
+@table-border-color:            @grey-10; // table and cell border
+
+
+/************************************************ BUTTONS */
+
+@btn-font-weight:               normal;
+@btn-font-size:                 @font-size-base;
+
+@btn-padding-vert:              8px;
+@btn-padding-horz:              10px;
+
+@btn-std-color:                 @base-color-2;
+@btn-std-text:                  @white;
+@btn-std-border:                darken(@btn-std-color, 5%);
+
+@btn-alt-color:                 @grey-6;
+@btn-alt-text:                  @grey-40;
+@btn-alt-border:                darken(@btn-alt-color, 5%);
+
+@btn-disabled-color:            @grey-40;
+@btn-disabled-text:             @grey-15;
+@btn-disabled-border:           darken(@btn-disabled-color, 5%);
+
+
+/************************************************ CLOSE BUTTON */
+@close-width:               30px;
+@close-height:              30px;
+@close-bg:                  @grey-40;
+@close-border-radius:       @border-radius;
+
+@close-bg-hover:            darken(@close-bg, 10%);
+
+
+/************************************************ FORMS */
+
+@label-text-color:              @grey-40;
+@label-font-family:             @custom-font-1;
+@label-font-size:               0.9em; // ~13px
+
+@input-text-color:              @grey-40;
+@input-font-family:             @font-family-base;
+@input-font-size:               0.9em; // ~13px
+
+@input-border-radius:           4px;
+@input-padding:                 8px;
+@input-border:                  1px solid @grey-15;
+@input-bg:                      @white;
+
+@input-bg-disabled:             @grey-20;
+
+@input-border-focus:            2px solid @grey-15;
+
+@input-color-placeholder:       @grey-20;
+
+@description-color:             @grey-40;
+@description-font-size:         @font-size-small;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+/************************************************ Z-INDEX */
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these
+
+@zindex-navbar:             1000;
+@zindex-dropdown:           1000;
+@zindex-popover:            1010;
+@zindex-tooltip:            1030;
+@zindex-navbar-fixed:       1030;
+@zindex-modal-background:   1040;
+@zindex-modal:              1050;
+
+
+/************************************************ NAVBAR */
+
+//NAVBAR BASICS
+@navbar-height:                         80px;
+@navbar-bg-color:                       @base-color-2;
+
+@navbar-item-padding-horz:              30px;
+@navbar-item-text-color:                @white;
+@navbar-item-font-family:               @custom-font-1;
+@navbar-item-font-size:                 @font-size-h6;
+
+@navbar-item-hover:                     darken(@navbar-bg-color, 10%);
+@navbar-item-text-color-hover:          @white;
+
+@navbar-dropdown-bg:                    @grey-60;
+@navbar-dropdown-width:                 14em;
+
+@navbar-subitem-bg:                     @grey-60;
+@navbar-subitem-padding-horz:           15px;
+@navbar-subitem-height:                 42px;
+@navbar-subitem-font-family:            @navbar-item-font-family;
+@navbar-subitem-text-color:             @white;
+@navbar-subitem-font-size:              @font-family-base;
+
+@navbar-subitem-bg-hover:               darken(@navbar-subitem-bg, 10%);
+
+//NAVBAR TOGGLE
+//@navbar-default-toggle-hover-bg:           #ddd;
+//@navbar-default-toggle-icon-bar-bg:        #ccc;
+//@navbar-default-toggle-border-color:       #ddd;
+
+
+/************************************************ TABS */
+//@nav-tabs-border-color:                         #ddd;
+
+//@nav-tabs-link-hover-border-color:            @gray-lighter;
+
+//@nav-tabs-active-link-hover-bg:                 @body-bg;
+//@nav-tabs-active-link-hover-color:            @gray;
+//@nav-tabs-active-link-hover-border-color:       #ddd;
+
+//@nav-tabs-justified-link-border-color:          #ddd;
+//@nav-tabs-justified-active-link-border-color:   @body-bg;
+
+
+/************************************************ PILLS */
+//@nav-pills-active-link-hover-bg:              @component-active-bg;
+//@nav-pills-active-link-hover-color:           @component-active-color;
+
+
+/************************************************ PAGINATION */
+//@pagination-bg:                 #fff;
+//@pagination-border:             #ddd;
+
+//@pagination-hover-bg:         @gray-lighter;
+
+//@pagination-active-bg:        @brand-primary;
+//@pagination-active-color:       #fff;
+
+//@pagination-disabled-color:   @gray-light;
+
+
+/************************************************ PROGRESS BARS */
+//@progress-bg:                 #f5f5f5;
+//@progress-bar-color:          #fff;
+
+//@progress-bar-bg:             @brand-primary;
+//@progress-bar-success-bg:     @brand-success;
+//@progress-bar-warning-bg:     @brand-warning;
+//@progress-bar-danger-bg:      @brand-danger;
+//@progress-bar-info-bg:        @brand-info;
+
+
+/************************************************ THUMBNAILS */
+//@thumbnail-padding:           4px;
+//@thumbnail-bg:                @body-bg;
+//@thumbnail-border:            #ddd;
+//@thumbnail-border-radius:     @border-radius;
+
+//@thumbnail-caption-color:     @text-color;
+//@thumbnail-caption-padding:   9px;
+
+
+/************************************************ BREADCRUMBS */
+//@breadcrumb-bg:               #f5f5f5;
+//@breadcrumb-color:            #ccc;
+//@breadcrumb-active-color:     @base-color-2;
+//@breadcrumb-separator:        "/";
+
+

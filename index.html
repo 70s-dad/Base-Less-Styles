@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Element Style Guide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="content-wrap">
+            <!-- sample navigation start - based on woothemes canvas example -->
+            <nav class="navigation" role="navigation">
+                <section class="menus">
+                    <a href="#" class="nav-home"><span>Home</span></a>
+                    <ul id="main-nav" class="nav fl">
+                        <li id="menu-item-01" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-01">
+                            <a href="#">Global Styles</a>
+                        </li>
+                        <li id="menu-item-02" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-02">
+                            <a href="#">Objects</a>
+                        </li>
+                        <li id="menu-item-03" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-03 parent">
+                            <a href="#">Components</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-3535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3535">
+                                    <a href="#">Features</a>
+                                </li>
+                                <li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536">
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302">
+                                    <a href="#">Archives</a>
+                                </li>
+                                <li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304">
+                                    <a href="#">Contact Form</a>
+                                </li>
+                                <li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799">
+                                    <a href="#">Timeline</a>
+                                </li>
+                                <li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-303">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4106">
+                                    <a href="#">Business</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-04" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-04">
+                            <a href="#">Animations</a>
+                        </li>
+                    </ul> <!-- /#main-nav -->
+                </section> <!-- /.menus -->
+            </nav> <!-- /#navigation -->
+            <!-- / sample navigation -->
+
+            <div class="style-guide-content post-content">
+                <h1>Style Guide</h1>
+
+                <div class="style-guide-title">
+                    <h3>Global Styles</h3>
+                    <p>Globally defined styles such as colours & typography. These styles effect objects & components site-wide.</p>
+                </div>
+
+                <div class="component-block">
+                    <div class="component-title">
+                        <h4>Fonts</h4>
+                    </div><!-- /.component-title -->
+                    <div class="component-preview">
+                        <p class="primary-font">Primary Font: “VAG Rounded Std”, Helvetica, Arial, sans-serif;</p>
+                        <p>Secondary Font: Helvetica, Arial, sans-serif;</p>
+                        <p><em>Secondary Font Italic: Helvetica, Arial, sans-serif;</em></p>
+                        <p><strong>Secondary Font Bold: Helvetica, Arial, sans-serif;</strong></p>
+                    </div>
+                    <div class="component-code">
+                        <pre class="  language-markup"><code class="  language-markup">&lt;p class=&quot;primary-font&quot;&gt;Primary Font: &quot;VAG Rounded Std&quot;, Helvetica, Arial, sans-serif;&lt;/p&gt;
+&lt;p&gt;Secondary Font: Helvetica, Arial, sans-serif;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Secondary Font Italic: Helvetica, Arial, sans-serif;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Secondary Font Bold: Helvetica, Arial, sans-serif;&lt;/strong&gt;&lt;/p&gt;</code></pre>
+                    </div><!-- /.component-code -->
+                </div><!-- /.component-block -->
+
+                <h1>Heading 1</h1>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h2>Heading 2</h2>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h3>Heading 3</h3>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h4>Heading 4</h4>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h5>Heading 5</h5>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h6>Heading 6</h6>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+                <h3>Paragraph</h3>
+                <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+
+                <h3>Blockquote</h3>
+                <blockquote><p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p></blockquote>
+
+                <h3>Inline Elements</h3>
+                <p>This is a <a href="#">text link</a></p>
+                <p><strong>Strong</strong> is used to indicate <strong>strong</strong> importance</p>
+                <p>This text has <em>added emphasis</em></p>
+                <p><del>This text is deleted</del></p>
+                <p><ins>This text is inserted</ins></p>
+                <p>Superscript<sup>®</sup></p>
+                <p>Subscript for things like H<sub>2</sub>O</p>
+                <p><small>This small text is small for for fine print, etc.</small></p>
+                <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+                <h3>Hr</h3>
+                <hr>
+
+                <h3>Unordered Lists</h3>
+                <ul>
+                    <li>This is a list item in an unordered list</li>
+                    <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line.</li>
+                    <li>Lists can be nested inside of each other
+                        <ul>
+                            <li>This is a nested list item</li>
+                            <li>This is another nested list item in an unordered list</li>
+                        </ul>
+                    </li>
+                    <li>This is the last list item</li>
+                </ul>
+
+                <h3>Ordered Lists</h3>
+                <ol>
+                    <li>This is a list item in an ordered list</li>
+                    <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+                    <li>Lists can be nested inside of each other
+                        <ol>
+                            <li>This is a nested list item</li>
+                            <li>This is another nested list item in an ordered list</li>
+                        </ol>
+                    </li>
+                    <li>This is the last list item</li>
+                </ol>
+
+                <h3>Definition Lists</h3>
+                <dl>
+                <dt>Definition List</dt>
+                <dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+                <dt>This is a term.</dt>
+                <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+                <dt>Here is another term.</dt>
+                <dd>And it gets a definition too, which is this line.</dd>
+                <dt>Here is term that shares a definition with the term below.</dt>
+                <dd>And it gets a definition too, which is this line.</dd>
+                </dl>
+
+                <h3>Icons</h3>
+                <div class="row">
+                    <svg class="alignleft" width="30" height="30">
+                        <image xlink:href="images/twitter-icon.svg" src="images/twitter-icon.png" width="30" height="30"/>
+                    </svg>
+                    <svg class="alignleft" width="30" height="30">
+                        <image xlink:href="images/facebook-icon.svg" src="images/facebook-icon.png" width="30" height="30"/>
+                    </svg>
+                    <svg class="alignleft" width="30" height="30">
+                        <image xlink:href="images/youtube-icon.svg" src="images/youtube-icon.png" width="30" height="30"/>
+                    </svg>
+                </div>
+
+                <h3>Favicon</h3>
+                <div class="row">
+                    <img class="alignleft" style="margin: 35px 10px 0 0;" src="images/favicon.png" alt="favicon" width="16" height="16">
+                    <br>
+                    <img class="alignleft" style="margin: 0;" src="images/faviconx32.png" alt="favicon" width="32" height="32">
+                </div>
+
+                <h3>Buttons</h3>
+                <p>
+                    <a class="btn" href="#">Button 01</a>
+                    <br>
+                    <a class="btn alt" href="#">Button 02</a>
+                    <br>
+                    <a class="btn disabled" href="#">Disabled Button</a>
+                </p>
+
+                <h3>Byline</h3>
+                <p>
+                    <span class="meta-author">
+                        <a title="Posts by Author" href="#" rel="author">Author Name&nbsp;|&nbsp;Dog Expert</a>
+                    </span>
+                    <span class="meta-posted">
+                        <time class="entry-date" datetime="2014-05-29T18:21:51+00:00">May 29, 2014</time>
+                    </span>
+                </p>
+
+                <h3>Form Styles</h3>
+
+                <div class="form-wrapper">
+                    <form method="post" enctype="multipart/form-data" target="" id="test-form-1" action="">
+
+                        <!-- Standard Text Input -->
+                        <label class="form-label" for="input-1-1">Text Input</label>
+                        <div class="input-container">
+                            <input name="input-1" id="input-1-1" type="text" value="" tabindex="1">
+                        </div>
+                        <div class="input-description">Text input description</div>
+
+                        <!-- Required Text Input -->
+                        <label class="form-label" for="input-1-2">Required Text Input<span class="form-required">*</span></label>
+                        <div class="input-container">
+                            <input name="input-2" id="input-1-2" type="text" value="" tabindex="2">
+                        </div>
+
+                        <!-- Textarea -->
+                        <label class="form-label" for="input-1-3">Text Area</label>
+                        <div class="input-container">
+                            <textarea name="input-3" placeholder="Placeholder text..." id="input-1-3" class="textarea" tabindex="3" rows="10" cols="50"></textarea>
+                        </div>
+
+                        <h4 class="form-title">Selection Menus</h4>
+
+                        <!-- Dropdown Menu -->
+                        <label class="form-label" for="input-1-4">Dropdown Menu</label>
+                        <div class="dropdown-menu-container">
+                            <select name="input-4" id="input-1-4" class="form-select" tabindex="4">
+                                <option value="First Choice" selected="selected">First Choice</option>
+                                <option value="Second Choice">Second Choice</option>
+                                <option value="Third Choice">Third Choice</option>
+                            </select>
+                        </div>
+
+                        <!-- Checkbox Menu -->
+                        <label class="form-label">Checkbox Menu</label>
+                        <div class="input-container">
+                            <ul class="form-checkbox" id="input-1-5">
+                                <li class="choice-1-5-1">
+                                    <input name="input-1-5-1" type="checkbox" value="Choice A" id="choice-1-5-1" tabindex="5">
+                                    <label for="choice-1-5-1" id="label-1-5-1">Choice A</label>
+                                </li>
+                                <li class="choice-1-5-2">
+                                    <input name="input-1-5-2" type="checkbox" value="Choice B" id="choice-1-5-2" tabindex="6">
+                                    <label for="choice-1-5-2" id="label-1-5-2">Choice B</label>
+                                </li>
+                                <li class="choice-1-5-3">
+                                    <input name="input-1-5-3" type="checkbox" value="Choice C" id="choice-1-5-3" tabindex="7">
+                                    <label for="choice-1-5-3" id="label-1-5-3">Choice C</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Radio Buttons -->
+                        <label class="form-label">Radio Buttons</label>
+                        <div class="input-container">
+                            <ul class="form-radio" id="input-1-6">
+                                <li class="choice-1-6-1">
+                                    <input name="input-1-6" type="radio" value="Option 1" id="choice-1-6-1" tabindex="8"><label for="choice-1-6-1" id="label-1-6-1">Option 1</label>
+                                </li>
+                                <li class="choice-1-6-2">
+                                    <input name="input-1-6" type="radio" value="Option 2" id="choice-1-6-2" tabindex="9"><label for="choice-1-6-2" id="label-1-6-2">Option 2</label>
+                                </li>
+                                <li class="choice-1-6-3">
+                                    <input name="input-1-6" type="radio" value="Option 3" id="choice-1-6-3" tabindex="10">
+                                    <label for="choice-1-6-3" id="label-1-6-3">Option 3</label>
+                                </li>
+                                <li class="choice-1-6-4">
+                                    <input name="input-1-6" type="radio" value="Option 4" id="choice-1-6-4" tabindex="11">
+                                    <label for="choice-1-6-4" id="label-1-6-4">Option 4</label>
+                                </li>
+                                <li class="choice-1-6-5">
+                                    <input name="input-1-6" type="radio" value="Option 5" id="choice-1-6-5" tabindex="12">
+                                    <label for="choice-1-6-5" id="label-1-6-5">Option 5</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="form-title">Contact / Name Details</h4>
+
+                        <!-- First Name -->
+                        <label class="form-label" for="input-1-7">First Name<span class="form-required">*</span></label>
+                        <div class="input-container">
+                            <input name="input-7" id="input-1-7" type="text" value="" tabindex="11">
+                        </div>
+
+                        <!-- Last Name -->
+                        <label class="form-label" for="input-1-8">Last Name<span class="form-required">*</span></label>
+                        <div class="input-container">
+                            <input name="input-8" id="input-1-8" type="text" value="" tabindex="12">
+                        </div>
+
+                        <!-- Email -->
+                        <label class="form-label" for="input-1-9">Email<span class="form-required">*</span></label>
+                        <div class="input-container">
+                            <input name="input-9" id="input-1-9" type="email" value="" tabindex="13">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-footer">
+                            <input type="submit" id="submit-button-1" class="button" value="Submit" tabindex="14">
+                        </div>
+
+                    </form>
+                </div> <!-- end form styles -->
+
+                <h3>Tables</h3>
+                <table style="height: 108px;" width="753">
+                    <thead>
+                        <tr>
+                            <td>Type of Filter</td>
+                            <td>How It Works</td>
+                            <td>Maintenance</td>
+                            <td>When Would You Use It?</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Top Fitted Power Filter</td>
+                            <td>Pump sucks water up and through the pressurised filter box.</td>
+                            <td>Simple to maintain, turn off pump, remove top cover and open the box.</td>
+                            <td>Normally comes with the tank.</td>
+                        </tr>
+                        <tr>
+                            <td>Hang-on Filter</td>
+                            <td>Hangs off the back with cartridges polishing the water.</td>
+                            <td>Easy access by removing the top of filter and replacing the cartridge.</td>
+                            <td>Purchased for smaller glass tanks.</td>
+                        </tr>
+                        <tr>
+                            <td>Canister Filter</td>
+                            <td>Filter sits under the tank with hoses to the top, large box for filter media.</td>
+                            <td>Slightly more difficult to maintain, taps make it easier, but they are strong filters.</td>
+                            <td>Ideal for bigger fish and large glass tanks.</td>
+                        </tr>
+                        <tr>
+                            <td>Internal Filter</td>
+                            <td>Sponge filter with power head sucking water through.</td>
+                            <td>Regular maintenance is needed but great for clearing a tank quickly.</td>
+                            <td>In a small tank or as a supplement filter to help clear water.</td>
+                        </tr>
+                        <tr>
+                            <td>Under Gravel Filter</td>
+                            <td>Sits below the gravel in the tank, runs off an air pump.</td>
+                            <td>Must use gravel siphons and be maintained regularly.</td>
+                            <td>For a cost-effective set-up; generally more maintenance later though.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer Test</td>
+                            <td>Footer Test</td>
+                            <td>Footer Test</td>
+                            <td>Footer Test</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>YouTube Videos</h3>
+                <p>Copy and paste the full video url/link from the browser as opposed to the ‘share’ option.</p>
+                <div class="embed-wrapper">
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/IGDdDuLVIZc?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+
+                <h1>Additional Examples</h1>
+
+                <h3>Pagination</h3>
+                <div class="pagination woo-pagination">
+                    <a class="prev page-numbers" href="#">&lt;</a>
+                    <span class="page-numbers current">1</span>
+                    <a class="page-numbers" href="#">2</a>
+                    <a class="page-numbers" href="#">3</a>
+                    <a class="next page-numbers" href="#">&gt;</a>
+                </div>
+
+                <h3>About The Author</h3>
+                <aside id="post-author">
+                    <div class="profile-image">
+                        <img alt="" src="http://1.gravatar.com/avatar/379ccfdd056fd6c80ec6d9eba655a6f3?s=80&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D80&amp;r=G" class="avatar avatar-80 photo" height="80" width="80">
+                    </div>
+                    <div class="profile-content">
+                        <h5>About Mark Forrester</h5>
+                        I am a half English, half South African online entreprenur, wannabe photographer, husband and co-founder of WooThemes. I am currently living and working in the Mother City, otherwise known as the beautiful Cape Town.
+
+                        You can add content to your profile under the user profile section of your WordPress backend.               
+                        <div class="profile-link">
+                            <a href="#">View all posts by Mark Forrester <span class="meta-nav">→</span></a>
+                        </div><!--#profile-link-->
+                    </div>
+                    <div class="fix"></div>
+                </aside>
+
+                <h3>Comment Thread</h3>
+                <div id="comments">
+                    <h5 id="comments-title">5 Responses to <em>Base Style Elements</em></h5>
+                    <ol class="commentlist">
+                        <li id="comment-17" class="comment even thread-even depth-1 parent">
+                            <div id="li-comment-17" class="comment-container">
+                                <div class="avatar">
+                                    <img alt="" src="images/avatar-placeholder.jpg" height="80" width="80">
+                                </div>
+                                <div class="comment-head">
+                                    <span class="name">admin</span>
+                                    <span class="date">January 11, 2010 at 3:13 pm</span>
+                                    <span class="edit"></span>
+                                </div><!-- /.comment-head -->
+                                <div class="comment-entry">
+                                    <p>This is a comment!</p>
+                                    <div class="reply">
+                                        <a class="comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/?replytocom=17#respond" onclick="return addComment.moveForm(&quot;comment-17&quot;, &quot;17&quot;, &quot;respond&quot;, &quot;77&quot;)">Reply</a>
+                                    </div><!-- /.reply -->
+                                </div><!-- /comment-entry -->
+                            </div><!-- /.comment-container -->
+                            <ul class="children">
+                                <li id="comment-20" class="comment odd alt depth-2 parent">
+                                    <div id="li-comment-20" class="comment-container">
+                                        <div class="avatar">
+                                            <img alt="" src="images/avatar-placeholder.jpg" height="80" width="80">
+                                        </div>
+                                        <div class="comment-head">
+                                            <span class="name">admin</span>
+                                            <span class="date">January 11, 2010 at 3:14 pm</span>
+                                            <span class="edit"></span>
+                                        </div><!-- /.comment-head -->
+                                        <div class="comment-entry">
+                                            <p>This is a threaded reply!</p>
+                                            <div class="reply">
+                                                <a class="comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/?replytocom=20#respond" onclick="return addComment.moveForm(&quot;comment-20&quot;, &quot;20&quot;, &quot;respond&quot;, &quot;77&quot;)">Reply</a>
+                                            </div><!-- /.reply -->
+                                        </div><!-- /comment-entry -->
+                                    </div><!-- /.comment-container -->
+                                    <ul class="children">
+                                        <li id="comment-21" class="comment even depth-3">
+                                            <div id="li-comment-21" class="comment-container">
+                                                <div class="avatar">
+                                                    <img alt="" src="images/avatar-placeholder.jpg" height="80" width="80">
+                                                </div>
+                                                <div class="comment-head">
+                                                    <span class="name">admin</span>
+                                                    <span class="date">January 11, 2010 at 3:15 pm</span>
+                                                    <span class="edit"></span>
+                                                </div><!-- /.comment-head -->
+                                                <div class="comment-entry">
+                                                    <p>And another threaded reply!</p>
+                                                    <div class="reply">
+                                                        <a class="comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/?replytocom=21#respond" onclick="return addComment.moveForm(&quot;comment-21&quot;, &quot;21&quot;, &quot;respond&quot;, &quot;77&quot;)">Reply</a>
+                                                    </div><!-- /.reply -->
+                                                </div><!-- /comment-entry -->
+                                            </div><!-- /.comment-container -->
+                                        </li><!-- #comment-## -->
+                                    </ul><!-- .children -->
+                                </li><!-- #comment-## -->
+                            </ul><!-- .children -->
+                        </li><!-- #comment-## -->
+                        <li id="comment-18" class="comment odd alt thread-odd thread-alt depth-1">
+                            <div id="li-comment-18" class="comment-container">
+                                <div class="avatar">
+                                    <img alt="" src="images/avatar-placeholder.jpg" height="80" width="80">
+                                </div>
+                                <div class="comment-head">
+                                    <span class="name">admin</span>
+                                    <span class="date">January 11, 2010 at 3:14 pm</span>
+                                    <span class="edit"></span>
+                                </div><!-- /.comment-head -->
+                                <div class="comment-entry">
+                                    <p>This is another comment!</p>
+                                    <div class="reply">
+                                        <a class="comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/?replytocom=18#respond" onclick="return addComment.moveForm(&quot;comment-18&quot;, &quot;18&quot;, &quot;respond&quot;, &quot;77&quot;)">Reply</a>
+                                    </div><!-- /.reply -->
+                                </div><!-- /comment-entry -->
+                            </div><!-- /.comment-container -->
+                        </li><!-- #comment-## -->
+                        <li id="comment-19" class="comment even thread-even depth-1">
+                            <div id="li-comment-19" class="comment-container">
+                                <div class="avatar">
+                                    <img alt="" src="images/avatar-placeholder.jpg" height="80" width="80">
+                                </div>
+                                <div class="comment-head">
+                                    <span class="name">admin</span>
+                                    <span class="date">January 11, 2010 at 3:14 pm</span>
+                                    <span class="edit"></span>
+                                </div><!-- /.comment-head -->
+                                <div class="comment-entry">
+                                    <p>And this is a third comment with some lorem ipsum!</p>
+                                    <p>Accumsan amet. Ut erat. Interdum aliquam donec accumsan pellentesque, tortor donec ut vestibulum in praesent nulla, enim semper habitant lorem viverra, vel dignissim quam vivamus sapien phasellus. Commodo ac pellentesque hac eu, eu ut elit, integer mauris libero.</p>
+                                    <div class="reply">
+                                        <a class="comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/?replytocom=19#respond" onclick="return addComment.moveForm(&quot;comment-19&quot;, &quot;19&quot;, &quot;respond&quot;, &quot;77&quot;)">Reply</a>
+                                    </div><!-- /.reply -->
+                                </div><!-- /comment-entry -->
+                            </div><!-- /.comment-container -->
+                        </li><!-- #comment-## -->
+                    </ol>
+                </div>
+
+                <h3>Comments Reply Form</h3>
+                <div id="respond" class="comment-respond">
+                    <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/canvas/2010/01/11/testing-the-elements/#respond" style="display:none;">Click here to cancel reply.</a></small></h3>
+                    <form action="http://demo.woothemes.com/canvas/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                        <p class="comment-form-author">
+                            <input id="author" name="author" type="text" class="txt" tabindex="50" value="" size="30" aria-required="true">
+                            <label for="author">Name <span class="required">(required)</span></label>
+                        </p>
+                        <p class="comment-form-email">
+                            <input id="email" name="email" type="text" class="txt" tabindex="51" value="" size="30" aria-required="true">
+                            <label for="email">Email (will not be published) <span class="required">(required)</span></label>
+                        </p>
+                        <p class="comment-form-url">
+                            <input id="url" name="url" type="text" class="txt" tabindex="52" value="" size="30">
+                            <label for="url">Website</label>
+                        </p>
+                        <p class="comment-form-comment">
+                            <label class="hide" for="comment">Comment</label>
+                            <textarea tabindex="53" id="comment" name="comment" cols="50" rows="10" aria-required="true"></textarea>
+                        </p>
+                        <p class="form-submit">
+                            <input name="submit" type="submit" id="submit" value="Submit Comment">
+                            <input type="hidden" name="comment_post_ID" value="77" id="comment_post_ID">
+                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                        </p>
+                        <p style="display: none;">
+                            <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="45c8565f7a">
+                        </p>
+                        <p style="display: none;"></p>
+                        <input type="hidden" id="ak_js" name="ak_js" value="1410914616683">
+                    </form>
+                </div><!-- end respond form -->
+
+                <a class="close" href="#"></a>
+
+            </div><!-- end element styles -->
+
+        </div> <!-- end .content-wrap -->
+
+        <!-- Scripts -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/prism.js"></script>
+    </body>
+</html>
