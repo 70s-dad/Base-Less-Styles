@@ -99,8 +99,11 @@
                     </div>
 
                     <div class="component-block">
+                        <div class="component-title">
+                            <h3>Main Navigation</h3>
+                        </div><!-- /.component-title -->
                         <!-- sample navigation start - based on woothemes canvas example -->
-                        <nav class="navigation" role="navigation">
+                        <nav class="navigation nav-example" role="navigation">
                             <section class="menus">
                                 <a href="#" class="nav-home"><span>Home</span></a>
                                 <ul id="main-nav" class="nav fl">
@@ -168,6 +171,75 @@
                             </section> <!-- /.menus -->
                         </nav> <!-- /#navigation -->
                         <!-- / sample navigation -->
+                        <div class="component-code">
+<pre class="language-markup"><code class="language-markup">&lt;nav class=&quot;navigation&quot; role=&quot;navigation&quot;&gt;
+&lt;section class=&quot;menus&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-home&quot;&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;
+    &lt;ul id=&quot;main-nav&quot; class=&quot;nav fl&quot;&gt;
+        &lt;li id=&quot;menu-item-01&quot; class=&quot;menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-01&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Navigation 01&lt;/a&gt;
+            &lt;ul class=&quot;sub-menu&quot;&gt;
+                &lt;li id=&quot;menu-item-3000&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3535&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 01&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3001&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3536&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 02&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3002&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-302&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 03&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3003&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-307&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 04&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li id=&quot;menu-item-02&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-02&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Navigation 02&lt;/a&gt;
+            &lt;ul class=&quot;sub-menu&quot;&gt;
+                &lt;li id=&quot;menu-item-3004&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3535&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 01&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3005&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3536&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 02&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3006&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-302&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 03&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3007&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-307&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 04&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li id=&quot;menu-item-03&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-03 parent&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Navigation 03&lt;/a&gt;
+            &lt;ul class=&quot;sub-menu&quot;&gt;
+                &lt;li id=&quot;menu-item-3535&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3535&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 01&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-3536&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-3536&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 02&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-302&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-302&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 03&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-307&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-307&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 04&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-304&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-304&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 05&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;menu-item-2799&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-2799&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Sub Nav 06&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li id=&quot;menu-item-04&quot; class=&quot;menu-item menu-item-type-post_type menu-item-object-page menu-item-04&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Navigation 04&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt; &lt;!-- /#main-nav --&gt;
+&lt;/section&gt; &lt;!-- /.menus --&gt;
+&lt;/nav&gt; &lt;!-- /#navigation --&gt;</code></pre>
+                        </div><!-- /.component-code -->
                     </div><!-- /.component-block -->
 
                 </div> <!-- /.style-guide-section - navigation -->
@@ -267,16 +339,60 @@
                         </div><!-- /.component-code -->
                     </div><!-- /.component-block -->
 
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3>Paragraph</h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup">&lt;p&gt;A paragraph (from the Greek paragraphos, %u201Cto write beside%u201D or %u201Cwritten beside%u201D) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.&lt;/p&gt;
+&lt;p&gt;A paragraph (from the Greek paragraphos, %u201Cto write beside%u201D or %u201Cwritten beside%u201D) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.&lt;/p&gt;</code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3>Blockquote</h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            <blockquote><p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p></blockquote>
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup">&lt;blockquote&gt;&lt;p&gt;A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.&lt;/p&gt;&lt;/blockquote&gt;</code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3></h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup"></code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
+                    <div class="component-block">
+                        <div class="component-title">
+                            <h3></h3>
+                        </div><!-- /.component-title -->
+                        <div class="component-preview">
+                            
+                        </div>
+                        <div class="component-code">
+                            <pre class="language-markup"><code class="language-markup"></code></pre>
+                        </div><!-- /.component-code -->
+                    </div><!-- /.component-block -->
+
                 </div> <!-- /.style-guide-section - global styles -->
 
+
                 
-
-                <h3>Paragraph</h3>
-                <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
-                <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
-
-                <h3>Blockquote</h3>
-                <blockquote><p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p></blockquote>
 
                 <h3>Inline Elements</h3>
                 <p>This is a <a href="#">text link</a></p>

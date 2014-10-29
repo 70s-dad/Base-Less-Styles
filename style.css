@@ -201,6 +201,9 @@ code {
 .colour-8 {
   background-color: #707070;
 }
+.nav-example {
+  margin-bottom: 20px;
+}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /*! added some styles from HTML5 Boilerplate on 19/09/2014 */
 html {
